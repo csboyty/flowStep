@@ -1,0 +1,81 @@
+/*组件基本样式*/
+.flowStep{
+
+}
+.flowStep .step{
+    float:left;
+    padding:0px 15px 0px 0px;
+    list-style:decimal inside;
+    background:url(../../images/app/step.png) #e6e6e6 no-repeat 100% -50px;
+    color:#333333;
+    font:700 14px/25px "微软雅黑";
+    text-align:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*设置宽度*/
+.steps3 .step{
+    width: 33%;
+}
+
+
+/*当前步骤效果*/
+.flowStepNo1 .step1,
+.flowStepNo2 .step2,
+.flowStepNo3 .step3,
+.flowStepNo4 .step4,
+.flowStepNo5 .step5,
+.flowStepNo6 .step6{
+    color: #fff;
+    background-color: #FF5500;
+}
+/*隐藏最后一个的backgroud,一定要放在当前步骤效果后面，不然当前步骤又设置了background*/
+.steps3 .step3,
+.steps4 .step4,
+.steps5 .step5,
+.steps6 .step6{
+    background-image: none;
+}
+
+/*当前步骤的前一步*/
+.flowStepNo2 .step1,
+.flowStepNo3 .step2,
+.flowStepNo4 .step3,
+.flowStepNo5 .step4,
+.flowStepNo6 .step5{
+    color: #ff6600;
+    background-color:#FFD98D;
+    background-position: 100% -25px;
+}
+/**当前步骤的前前步骤之前的步骤*/
+.flowStepNo3 .step1,
+.flowStepNo4 .step2,.flowStepNo4 .step1,
+.flowStepNo5 .step3,.flowStepNo5 .step2,.flowStepNo5 .step1,
+.flowStepNo6 .step4,.flowStepNo6 .step3,.flowStepNo6 .step2,.flowStepNo6 .step1{
+    color: #ff6600;
+    background-position: 100% -0px;
+    background-color:#FFD98D;
+}
+
+/*已完成，无当前步骤*/
+.flowStepNo1N .step1,
+.flowStepNo2N .step2,
+.flowStepNo3N .step3,
+.flowStepNo4N .step4,
+.flowStepNo5N .step5,
+.flowStepNo6N .step6
+{
+    background-position: 100% -50px;
+    background-color:#FFD98D;
+    color:#FF6600;
+}
+.flowStepNo2N .step1,
+.flowStepNo3N .step2,
+.flowStepNo4N .step3,
+.flowStepNo5N .step4,
+.flowStepNo6N .step5{
+    background-position: 100% 0;
+}
+
